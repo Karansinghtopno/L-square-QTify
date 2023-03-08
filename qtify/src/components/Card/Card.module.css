@@ -1,0 +1,44 @@
+.container {
+  width: 160px;
+  height: 230px;
+  background: var(--color-black);
+  border-radius: 14px 14px 0px 0px;
+}
+.top {
+  width: 100%;
+  height: 200px;
+  border-radius: 16px;
+  /* background: transparent; */
+  background: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 6px;
+}
+.top > img {
+  height: 80%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 14px 14px 0px 0px ;
+  /* z-index: ; */
+}
+.top > p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--color-white);
+  background: var(--color-black);
+  padding: 5px 10px;
+  margin-left: 5px;
+  border-radius: 14px;
+}
+.bottom {
+  margin-top: 5px;
+  padding: 5px;
+  width: 100%;
+  color: var(--color-white);
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
