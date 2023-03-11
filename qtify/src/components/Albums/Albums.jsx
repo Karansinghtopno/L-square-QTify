@@ -16,8 +16,6 @@ const Albums = () => {
       const response2 = await axios.get(URL.newAlbums);
       setNewAlbums(response2.data);
     } catch (error) {
-      setTopAlbums([]);
-      setNewAlbums([]);
       console.log(error.message);
     }
   };
