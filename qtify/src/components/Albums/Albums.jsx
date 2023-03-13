@@ -10,20 +10,22 @@ const Albums = () => {
 
   const fetchAlbums = async (URL) => {
     try {
-      const response1 = await axios.get(URL.topAlbums);
-      setTopAlbums(response1.data);
-
+      
+      const topAlbum = await axios.get(AlbumEndpoints.topAlbums);
+      console.log("topAlbum data",topAlbum.data);
+      setTopAlbums(topAlbum.data);
+      
       const response2 = await axios.get(URL.newAlbums);
       setNewAlbums(response2.data);
+      console.log(response2)
     } catch (error) {
-      console.log(error.message);
+      console.log(error);
     }
   };
 
   useEffect(() => {
-    fetchAlbums(AlbumEndpoints);
+    fetchAlbums(AlbumEndpoints);  
   }, []);
-  console.log(topAlbums);
   return (
     <div className={classes.container}>
       <div className={classes.topAlbums}>

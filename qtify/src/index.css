@@ -23,8 +23,16 @@ body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  
+  overflow-y: scroll;
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
 
 
+}
+
+body::-webkit-scrollbar {
+  width: 0px; /* Hide scrollbar for Chrome, Safari, and Opera */
 }
 img,
 picture,

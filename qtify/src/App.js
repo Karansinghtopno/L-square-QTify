@@ -1,11 +1,12 @@
+import React from "react";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
-
 import Albums from "./components/Albums/Albums";
 
 export const AlbumEndpoints = {
-  topAlbums: `https://qtify-backend-gye4ebhsbpfea8g9.z01.azurefd.net/albums/top`,
-  newAlbums: `https://qtify-backend-gye4ebhsbpfea8g9.z01.azurefd.net/albums/new`,
+  topAlbums: "https://qtify-backend-labs.crio.do/albums/top",
+  newAlbums: "https://qtify-backend-labs.crio.do/albums/new",
+  songs: "https://qtify-backend-labs.crio.do/songs",
 };
 
 function App() {
