@@ -15,7 +15,7 @@ const Albums = () => {
   return (
     <div className={classes.container}>
       <Album Albums={topAlbums} title="Top Albums" />
-      {/* <Album Albums={newAlbums} title="New Albums" /> */}
+      <Album Albums={newAlbums} title="New Albums" />
     </div>
   );
 };
