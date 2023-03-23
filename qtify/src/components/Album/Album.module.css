@@ -1,0 +1,29 @@
+.Album {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 30px;
+}
+
+.Album > .topSection{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.topAlbumTitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+.showAll {
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.Album > .bottomSection {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  position: relative;
+}
