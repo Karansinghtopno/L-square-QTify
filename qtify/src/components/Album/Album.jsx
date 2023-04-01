@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Card from "../Card/Card";
+import Card from "../Card/AlbumCard/Card";
 import Carousel from "../Carousel/Carousel";
 import classes from "./Album.module.css";
 
@@ -19,7 +19,7 @@ const Album = ({ Albums, title }) => {
       </div>
       <div className={classes.bottomSection}>
         {!isShowAll ? (
-          <Carousel data={Albums} />
+          <Carousel data={Albums} type="album" />
         ) : (
           <>
             {Albums.length > 0 ? (
@@ -28,9 +28,11 @@ const Album = ({ Albums, title }) => {
                   return (
                     <Card
                       key={album.id}
-                      img={album.image}
-                      follows={Math.round(album.follows / 1000)}
-                      title={album.title}
+                      type="album"
+                      // img={album.image}
+                      // follows={Math.round(album.follows / 1000)}
+                      // title={album.title}
+                      data={album}
                     />
                   );
                 })}
