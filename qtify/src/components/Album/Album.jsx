@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Card from "../Card/AlbumCard/Card";
+import Card from "../Card/Card";
 import Carousel from "../Carousel/Carousel";
 import classes from "./Album.module.css";
 

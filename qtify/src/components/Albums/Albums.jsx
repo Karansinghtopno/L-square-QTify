@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { fetchNewAlbums, fetchTopAlbums } from "../../api/api";
 import Album from "../Album/Album";
-import SongCard from "../Card/SongCard/SongCard";
 import SongSection from "../SongSection/SongSection";
 import classes from "./Albums.module.css";
+import Faq from "../Faq/Faq";
 
 const Albums = () => {
   const [topAlbums, setTopAlbums] = useState([]);
@@ -23,8 +23,7 @@ const Albums = () => {
       <hr className={classes.horizontalLine} />
       <SongSection />
       <hr className={classes.horizontalLine} />
-      
-
+      <Faq/>
     </div>
   );
 };
